@@ -3,6 +3,7 @@ const scale = 20;
 const w = 2000;
 const h = 1600;
 let flying = 0;
+let side = 0;
 var landscape = [];
 
 function setup() {
@@ -14,11 +15,17 @@ function setup() {
 }
 
 function draw() {
-
+    if (keyIsDown(LEFT_ARROW)){
+        side = side -0.1;
+        console.log(side)
+    }else if(keyIsDown(RIGHT_ARROW)){
+        side = side +0.1;
+        console.log(side)
+    }
     flying -= 0.1;
     let yoff = flying;
     for (let y = 0; y < rows; y++) {
-        let xoff = 0;
+        let xoff = side;
         let xArray = [rows];
         for (let x = 0; x < cols; x++) {
             xArray[x] = map(noise(xoff, yoff), 0, 1, -100, 100);
@@ -43,4 +50,4 @@ function draw() {
         }
         endShape();
     }
-}   
+}
