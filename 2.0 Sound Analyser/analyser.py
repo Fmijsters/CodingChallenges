@@ -95,12 +95,87 @@ def generateChromagram(y,sr):
 	plt.tight_layout()
 	plt.show()
 
+def generateMFCC(y,sr):
+	# Let's make and display a mel-scaled power (energy-squared) spectrogram
+	S = librosa.feature.melspectrogram(y, sr=sr, n_mels=128)
+
+	# Convert to log scale (dB). We'll use the peak power (max) as reference.
+	log_S = librosa.power_to_db(S, ref=np.max)
+	# Next, we'll extract the top 13 Mel-frequency cepstral coefficients (MFCCs)
+	mfcc        = librosa.feature.mfcc(S=log_S, n_mfcc=13)
+
+	# Let's pad on the first and second deltas while we're at it
+	delta_mfcc  = librosa.feature.delta(mfcc)
+	delta2_mfcc = librosa.feature.delta(mfcc, order=2)
+
+	# How do they look?  We'll show each in its own subplot
+	plt.figure(figsize=(12, 6))
+
+	plt.subplot(3,1,1)
+	librosa.display.specshow(mfcc)
+	plt.ylabel('MFCC')
+	plt.colorbar()
+
+	plt.subplot(3,1,2)
+	librosa.display.specshow(delta_mfcc)
+	plt.ylabel('MFCC-$\Delta$')
+	plt.colorbar()
+
+	plt.subplot(3,1,3)
+	librosa.display.specshow(delta2_mfcc, sr=sr, x_axis='time')
+	plt.ylabel('MFCC-$\Delta^2$')
+	plt.colorbar()
+
+	plt.tight_layout()
+	plt.show()
+
+	# For future use, we'll stack these together into one matrix
+	M = np.vstack([mfcc, delta_mfcc, delta2_mfcc])
+
+def generateBeatTracker(y,sr):
+	# Let's make and display a mel-scaled power (energy-squared) spectrogram
+	S = librosa.feature.melspectrogram(y, sr=sr, n_mels=128)
+
+	# Convert to log scale (dB). We'll use the peak power (max) as reference.
+	log_S = librosa.power_to_db(S, ref=np.max)
+
+	y_harmonic, y_percussive = librosa.effects.hpss(y)
+
+	# Now, let's run the beat tracker.
+	# We'll use the percussive component for this part
+	plt.figure(figsize=(12, 6))
+	tempo, beats = librosa.beat.beat_track(y=y_percussive, sr=sr)
+
+	# Let's re-draw the spectrogram, but this time, overlay the detected beats
+	plt.figure(figsize=(12,4))
+	librosa.display.specshow(log_S, sr=sr, x_axis='time', y_axis='mel')
+
+	# Let's draw transparent lines over the beat frames
+	plt.vlines(librosa.frames_to_time(beats),
+	           1, 0.5 * sr,
+	           colors='w', linestyles='-', linewidth=2, alpha=0.5)
+
+	plt.axis('tight')
+
+	plt.colorbar(format='%+02.0f dB')
+	print('Estimat	ed tempo:        %.2f BPM' % tempo)
+
+	print('First 5 beat frames:   ', beats[:5])
+
+	# Frame numbers are great and all, but when do those beats occur?
+	print('First 5 beat times:    ', librosa.frames_to_time(beats[:5], sr=sr))
+	plt.tight_layout()
+	plt.show()
+
+
 def analyse(audio_path):
 	y, sr = librosa.load(audio_path)
 	print("Succes")
 	# generateMegSpectogram(y,sr)
 	# generateHarmonicPercussiveSourceSeperation(y,sr)
 	generateChromagram(y,sr)
+	# generateMFCC(y,sr)
+	# generateBeatTracker(y,sr)
 
 
 
@@ -109,4 +184,7 @@ def analyse(audio_path):
 
 
 if __name__ == "__main__":
+   if len(sys.argv) < 3:
+   		print("please give a song path and an analyse method")
+   		exit()
    analyse(sys.argv[1])
