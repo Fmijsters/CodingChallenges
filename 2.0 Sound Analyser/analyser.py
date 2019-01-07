@@ -80,21 +80,28 @@ def generateChromagram(y,sr):
 	y_harmonic, y_percussive = librosa.effects.hpss(y)
 	# We'll use a CQT-based chromagram here.  An STFT-based implementation also exists in chroma_cqt()
 	# We'll use the harmonic component to avoid pollution from transients
-	C = librosa.feature.chroma_cqt(y=y_harmonic, sr=sr)
-
+	chroma_orig = librosa.feature.chroma_cqt(y=y_harmonic, sr=sr)
 	# Make a new figure
-	plt.figure(figsize=(12,4))
+	idx = [slice(None), slice(*list(librosa.time_to_frames([1, 1.1])))]
 
+	plt.figure(figsize=(12,4))
 	# Display the chromagram: the energy in each chromatic pitch class as a function of time
 	# To make sure that the colors span the full range of chroma values, set vmin and vmax
-	librosa.display.specshow(C, sr=sr, x_axis='time', y_axis='chroma', vmin=0, vmax=1)
-
+	librosa.display.specshow(chroma_orig[idx], sr=sr, x_axis='time', y_axis='chroma', vmin=0, vmax=1)
+	# print(C[:,7])
+	# print(C[:,15])
+	# print(C[:,18])
+	# print(C[:,100])
+	formatter = librosa.display.ChromaFormatter()
+	for i,value in enumerate(chroma_orig[[slice(None), slice(*list(librosa.time_to_frames([1, 1.1])))]]):
+		print(str(i) + ": " + str(value) + ": " + str(formatter.format_data(i)))
+	# print(y.shape)
 	plt.title('Chromagram')
 	plt.colorbar()
 
 	plt.tight_layout()
 	plt.show()
-
+	
 def generateMFCC(y,sr):
 	# Let's make and display a mel-scaled power (energy-squared) spectrogram
 	S = librosa.feature.melspectrogram(y, sr=sr, n_mels=128)
@@ -168,14 +175,20 @@ def generateBeatTracker(y,sr):
 	plt.show()
 
 
-def analyse(audio_path):
+def analyse(audio_path,analyse_method):
 	y, sr = librosa.load(audio_path)
 	print("Succes")
-	# generateMegSpectogram(y,sr)
-	# generateHarmonicPercussiveSourceSeperation(y,sr)
-	generateChromagram(y,sr)
-	# generateMFCC(y,sr)
-	# generateBeatTracker(y,sr)
+
+	if analyse_method == "meg":
+		generateMegSpectogram(y,sr)
+	elif analyse_method == "hpss":
+		generateHarmonicPercussiveSourceSeperation(y,sr)
+	elif analyse_method == "chromagram":
+		generateChromagram(y,sr)
+	elif analyse_method == "mfcc":
+		generateMFCC(y,sr)
+	elif analyse_method == "bt":
+		generateBeatTracker(y,sr)
 
 
 
@@ -186,5 +199,14 @@ def analyse(audio_path):
 if __name__ == "__main__":
    if len(sys.argv) < 3:
    		print("please give a song path and an analyse method")
+   		print("Choose between: ")
+   		print("Meg spectogram: meg")
+   		print("Generate harmonic percussive source spereration: hpss")
+   		print("Generate Chromagram: chromagram")
+   		print("Generate MFCC: mfcc")
+   		print("Generate beat tracker: bt")
    		exit()
-   analyse(sys.argv[1])
+   else:
+   		audio_path = sys.argv[1]
+   		analyse_method = sys.argv[2].lower()
+   		analyse(audio_path,analyse_method)
