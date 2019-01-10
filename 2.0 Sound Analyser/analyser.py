@@ -161,19 +161,16 @@ def generateChromagram(y,sr):
 	summarized_chords = summarizeChords(chords_map_by_time)
 
 	for key,value in summarized_chords.items():
-		c = Chord(value)
-		c.transpose(-4)
-		print(str(key) + ": " + str(c))
+		summarized_chords[key] = Chord(value)
 
+	# plt.figure(figsize=(12,4))
+	# librosa.display.specshow(chroma_orig, sr=sr, x_axis='time', y_axis='chroma', vmin=0, vmax=1)
+	# plt.title('Chromagram')
+	# plt.colorbar()
 
-
-	plt.figure(figsize=(12,4))
-	librosa.display.specshow(chroma_orig, sr=sr, x_axis='time', y_axis='chroma', vmin=0, vmax=1)
-	plt.title('Chromagram')
-	plt.colorbar()
-
-	plt.tight_layout()
-	plt.show()
+	# plt.tight_layout()
+	# plt.show()
+	return summarized_chords
 	
 def generateMFCC(y,sr):
 	# Let's make and display a mel-scaled power (energy-squared) spectrogram
@@ -248,23 +245,32 @@ def generateBeatTracker(y,sr):
 	plt.show()
 
 
-def analyse(audio_path,analyse_method):
-	global path
+def analyse(audio_path,analyse_method,export_path):
+	global path,ex_path
+	audio_path = "audio/"+audio_path
 	path = audio_path
+	ex_path = export_path
 	y, sr = librosa.load(audio_path)
 	print("Succes")
-
+	result = None
 	if analyse_method == "meg":
 		generateMegSpectogram(y,sr)
 	elif analyse_method == "hpss":
 		generateHarmonicPercussiveSourceSeperation(y,sr)
 	elif analyse_method == "chromagram":
-		generateChromagram(y,sr)
+		result = generateChromagram(y,sr)
 	elif analyse_method == "mfcc":
 		generateMFCC(y,sr)
 	elif analyse_method == "bt":
 		generateBeatTracker(y,sr)
-
+	if ex_path != "" and result is not None:
+		json = "{\"chords\":["
+		for time,chord in result.items():
+			json = json + "{\"time\":\""+str(time)+"\",\"chord\":\""+str(chord)+"\"},"
+		json = json[:-1]
+		json = json + "]}"
+		print(json)
+		
 if __name__ == "__main__":
    if len(sys.argv) < 3:
    		print("please give a song path and an analyse method")
@@ -278,4 +284,7 @@ if __name__ == "__main__":
    else:
    		audio_path = sys.argv[1]
    		analyse_method = sys.argv[2].lower()
-   		analyse(audio_path,analyse_method)
+   		export_path = ""
+   		if len(sys.argv) == 4:
+   			export_path = sys.argv[3]
+   		analyse(audio_path,analyse_method,export_path)
