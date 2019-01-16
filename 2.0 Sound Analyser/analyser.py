@@ -14,32 +14,38 @@ import librosa
 # And the display module for visualization
 import librosa.display
 
-global path
+global path, allowed
+allowed = False
 
 def generateMegSpectogram(y,sr):
 	# Let's make and display a mel-scaled power (energy-squared) spectrogram
-	S = librosa.feature.melspectrogram(y, sr=sr, n_mels=128)
+	S = librosa.feature.melspectrogram(y, sr=sr, n_mels=20, hop_length=512)
 
 	# Convert to log scale (dB). We'll use the peak power (max) as reference.
 	log_S = librosa.power_to_db(S, ref=np.max)
+	# idx = [slice(None), slice(*list(librosa.time_to_frames([0.3, 0.5])))]
+	# print(log_S[19,:])	
+	melMap = getMapByMel(log_S,y,sr)
 
+	print(melMap)
 	# Make a new figure
-	plt.figure(figsize=(12,4))
+	# plt.figure(figsize=(12,4))
 
 	# Display the spectrogram on a mel scale
 	# sample rate and hop length parameters are used to render the time axis
-	librosa.display.specshow(log_S, sr=sr, x_axis='time', y_axis='mel')
+	# librosa.display.specshow(log_S, sr=sr, x_axis='time', y_axis='mel')
 
 	# Put a descriptive title on the plot
-	plt.title('mel power spectrogram')
+	# plt.title('mel power spectrogram')
 
 	# draw a color bar
-	plt.colorbar(format='%+02.0f dB')
+	# plt.colorbar(format='%+02.0f dB')
 
 	# Make the figure layout compact
 	# plt.tight_layout()
 
-	plt.show()
+	# plt.show()
+	return melMap
 
 def generateHarmonicPercussiveSourceSeperation(y,sr):
 	y_harmonic, y_percussive = librosa.effects.hpss(y)
@@ -100,6 +106,45 @@ def clean_map(chords_map):
 	for value in array:
 		del chords_map[value]
 	return chords_map
+
+def isChordDown(values):
+	return (values[0][values.shape[1]-1:] > -80.)[0]
+
+def getMapByMel(log_S,y,sr):
+	global allowed
+	frame_count = log_S.shape[1]
+	total_time= 0
+	chord_by_time_map ={}
+	for i in range(1,frame_count):
+		times = librosa.core.frames_to_time([i-1,i],sr=sr,hop_length=512)
+		total_time = total_time + (times[1] - times[0])
+	rounded_time = round(total_time,2)
+	teller = 0.00
+	time_array = list()
+	while teller != round(rounded_time + 0.01,2):
+		time_array.append(teller)
+		teller = round(teller + 0.01,2)
+	prev_value = 0
+	old_idx = None
+	for i,value in enumerate(time_array):
+		idx = [slice(None), slice(*list(librosa.time_to_frames([prev_value, value])))]
+		if i == 0:
+			continue
+		if log_S[idx].shape[1] == 0:
+			continue
+		chordDown = False;
+		if old_idx is not None:
+			if (str(isChordDown(log_S[old_idx])) == "False") and (str(isChordDown(log_S[idx])) == "False"):
+				allowed = True
+			if (str(isChordDown(log_S[old_idx])) == "True") and (str(isChordDown(log_S[idx])) == "True"):
+				if allowed:
+					chordDown = True
+					allowed = False
+		if chordDown:
+			chord_by_time_map[prev_value] = chordDown
+		prev_value = value
+		old_idx = idx
+	return chord_by_time_map
 	
 def getMapByChromaOrig(chroma_orig,y,sr):
 	frame_count = chroma_orig.shape[1]
@@ -126,6 +171,7 @@ def getMapByChromaOrig(chroma_orig,y,sr):
 		prev_value = value
 
 	return clean_map(chord_by_time_map)
+
 def checkAllEqualInList(lst):
 	if len(lst) == 0:
 		return False
@@ -151,14 +197,33 @@ def summarizeChords(chords_map):
 			cleanList[key] = value[0]
 	return cleanList
 
+def summarizeChordsToTheSecond(summarized_chords):
+	total_array = {}
+	for key,value in summarized_chords.items():
+		roundend_key = round(key)
+		if roundend_key in total_array:
+			array = total_array[roundend_key]
+			array.append(value)
+			total_array[roundend_key] = array
+		else:
+			new_array = list()
+			new_array.append(value)
+			total_array[roundend_key] = new_array
+	cleanList = {}
+	for key,value in total_array.items():
+		if checkAllEqualInList(value):
+			cleanList[key] = value[0]
+	return cleanList
+
 def generateChromagram(y,sr):
 	global path
+	melMap = generateMegSpectogram(y,sr)
 	y_harmonic, y_percussive = librosa.effects.hpss(y)
 	chroma_orig = librosa.feature.chroma_cqt(y=y_harmonic, sr=sr, hop_length=512)
 	
-	chords_map_by_time = getMapByChromaOrig(chroma_orig,y,sr)
+	summarized_chords = getMapByChromaOrig(chroma_orig,y,sr)
 
-	summarized_chords = summarizeChords(chords_map_by_time)
+	# summarized_chords = summarizeChords(summarized_chords)
 
 	for key,value in summarized_chords.items():
 		summarized_chords[key] = Chord(value)
@@ -170,6 +235,10 @@ def generateChromagram(y,sr):
 
 	# plt.tight_layout()
 	# plt.show()
+	for timestamp, down in melMap.items():
+		print(str(summarized_chords[timestamp]))
+	# summarized_chords = summarizeChordsToTheSecond(summarized_chords)
+	# print(summarized_chords)
 	return summarized_chords
 	
 def generateMFCC(y,sr):
@@ -244,6 +313,10 @@ def generateBeatTracker(y,sr):
 	plt.tight_layout()
 	plt.show()
 
+def writeFile(json):
+	f = open(export_path,"w")
+	f.write(json)
+	f.close()
 
 def analyse(audio_path,analyse_method,export_path):
 	global path,ex_path
@@ -266,10 +339,11 @@ def analyse(audio_path,analyse_method,export_path):
 	if ex_path != "" and result is not None:
 		json = "{\"chords\":["
 		for time,chord in result.items():
+			# chord.transpose(-4)
 			json = json + "{\"time\":\""+str(time)+"\",\"chord\":\""+str(chord)+"\"},"
 		json = json[:-1]
 		json = json + "]}"
-		print(json)
+		writeFile(json)
 		
 if __name__ == "__main__":
    if len(sys.argv) < 3:
