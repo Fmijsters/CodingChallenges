@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EclipseCodeFormatterProjectSettings">
+    <option name="projectSpecificProfile">
+      <ProjectSpecificProfile>
+        <option name="enableJSFormatting" value="true" />
+        <option name="formatter" value="ECLIPSE" />
+        <option name="importOrderConfigFilePath" value="$PROJECT_DIR$/../../../../Topicus-repos/codestandards/topicuszorg.importorder" />
+        <option name="importOrderFromFile" value="true" />
+        <option name="pathToConfigFileJS" value="$PROJECT_DIR$/../../../../Topicus-repos/codestandards/jsformatter.xml" />
+        <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../../../../Topicus-repos/codestandards/formatter.xml" />
+        <option name="selectedJavaProfile" value="TopicusZorgFormatter" />
+        <option name="selectedJavaScriptProfile" value="2elijnformatter" />
+      </ProjectSpecificProfile>
+    </option>
+    <option name="selectedGlobalProfile">
+      <Settings>
+        <option name="enableJSFormatting" value="true" />
+        <option name="formatter" value="ECLIPSE" />
+        <option name="id" value="1542887358462" />
+        <option name="importOrderConfigFilePath" value="$PROJECT_DIR$/../../../../Topicus-repos/codestandards/topicuszorg.importorder" />
+        <option name="importOrderFromFile" value="true" />
+        <option name="name" value="Topicus Zorg" />
+        <option name="pathToConfigFileJS" value="$PROJECT_DIR$/../../../../Topicus-repos/codestandards/jsformatter.xml" />
+        <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../../../../Topicus-repos/codestandards/formatter.xml" />
+        <option name="selectedJavaProfile" value="TopicusZorgFormatter" />
+        <option name="selectedJavaScriptProfile" value="2elijnformatter" />
+      </Settings>
+    </option>
+  </component>
+</project>
