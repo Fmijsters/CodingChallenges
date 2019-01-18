@@ -27,6 +27,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-integration'
     implementation "org.springframework.boot:spring-boot-starter-web"
     implementation "org.springframework.boot:spring-boot-starter-security"
+    compile group: 'javax.servlet', name: 'jstl', version: '1.2'
 
     implementation 'com.auth0:mvc-auth-commons:1.+'
     runtimeOnly 'org.postgresql:postgresql'
