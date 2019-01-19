@@ -35,7 +35,7 @@ public class CallbackController
 	public CallbackController()
 	{
 		this.redirectOnFail = "/login";
-		this.redirectOnSuccess = "/portal/home";
+		this.redirectOnSuccess = "http://localhost:4200/";
 	}
 
 	@RequestMapping(value = "/callback", method = RequestMethod.GET)

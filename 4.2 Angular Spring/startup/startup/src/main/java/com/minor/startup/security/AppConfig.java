@@ -29,7 +29,7 @@ public class AppConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable();
         http
                 .authorizeRequests()
-                .antMatchers("/callback", "/login").permitAll()
+                .antMatchers("/callback", "/login","/v2/api-docs").permitAll()
                 .antMatchers("/**").authenticated()
                 .and()
                 .logout().permitAll();

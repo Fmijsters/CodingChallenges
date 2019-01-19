@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "swagger": "java -jar openapi-generator-cli-4.0.0-20181016.161911-30.jar generate -i http://localhost:8080/v2/api-docs -g typescript-angular -o src/generated/api-client --additional-properties ngVersion=6",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -25,13 +26,13 @@
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.11.0",
+    "@angular-devkit/build-angular": "^0.11.4",
     "@angular/cli": "~7.1.3",
     "@angular/compiler-cli": "~7.1.0",
     "@angular/language-service": "~7.1.0",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
@@ -41,6 +42,7 @@
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.4.0",
+    "swagger-ts-generator": "^1.1.48",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.1.6"
