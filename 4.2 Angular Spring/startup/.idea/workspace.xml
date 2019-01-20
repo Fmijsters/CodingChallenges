@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7c18a50-f141-4489-85cf-2a4a9ebda895" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4.0 Angular Spring/minor-backend/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../4.0 Angular Spring/minor-backend/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4.0 Angular Spring/minor-backend/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../4.0 Angular Spring/minor-backend/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4.0 Angular Spring/minor-backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../4.0 Angular Spring/minor-backend/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4.0 Angular Spring/minor-backend/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../4.0 Angular Spring/minor-backend/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4.0 Angular Spring/minor-backend/src/main/java/SpringbootHelloworldApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../4.0 Angular Spring/minor-backend/src/main/java/SpringbootHelloworldApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/startup_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/startup_main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/startup_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/startup_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startup-frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startup/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/startup/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/CallbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/CallbackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/StartupApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/StartupApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/MvcConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LoginController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/startup/.gradle/" />
     <ignored path="$PROJECT_DIR$/startup/build/" />
@@ -43,11 +35,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup/build.gradle">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/CallbackController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="31" column="68" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
+            <state relative-caret-position="184">
+              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,35 +50,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/AppConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="31" column="64" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
+            <state relative-caret-position="303">
+              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1808#1809#0" expanded="true" />
-                <element signature="e#1837#1838#0" expanded="true" />
-                <element signature="e#1872#1873#0" expanded="true" />
-                <element signature="e#1903#1904#0" expanded="true" />
-                <element signature="e#1942#1943#0" expanded="true" />
-                <element signature="e#1977#1978#0" expanded="true" />
+                <element signature="e#914#935#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/ErrorController.java">
+        <entry file="file://$PROJECT_DIR$/startup/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+            <state relative-caret-position="85">
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/SwaggerConfig.java">
+        <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+            <state relative-caret-position="374">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,31 +82,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup-frontend/package.json">
+        <entry file="file://$PROJECT_DIR$/startup/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/CallbackController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/TokenAuthentication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+            <state relative-caret-position="544">
+              <caret line="32" column="87" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -124,28 +93,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="68">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startup-frontend/src/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startup-frontend/src/generated/api-client/api/homeController.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-612" />
+            <state relative-caret-position="986">
+              <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+              <folding>
+                <element signature="e#308#390#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -168,27 +150,29 @@
         <option value="$PROJECT_DIR$/startup/src/main/resources/auth0.properties" />
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/MvcConfig.java" />
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/ErrorController.java" />
-        <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LogoutController.java" />
         <option value="$PROJECT_DIR$/startup/src/main/resources/webapp/WEB-INF/jsp/home.jsp" />
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/MvcConfiguration.java" />
         <option value="$PROJECT_DIR$/startup/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/StartupApplication.java" />
-        <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/CallbackController.java" />
-        <option value="$PROJECT_DIR$/startup/build.gradle" />
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/startup-frontend/package.json" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/StartupApplication.java" />
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/AppConfig.java" />
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/HomeController.java" />
-        <option value="$PROJECT_DIR$/startup-frontend/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/startup/build.gradle" />
+        <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/services/AuthService.java" />
+        <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/CallbackController.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-460" />
+    <option name="y" value="-19" />
+    <option name="width" value="3860" />
+    <option name="height" value="1111" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -319,6 +303,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="startup" type="58d84e3e:PackageViewProjectNode" />
+              <item name="startup" type="eaaa3913:PackageViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="startup" type="58d84e3e:PackageViewProjectNode" />
+              <item name="startup" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="startup_main" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -384,44 +384,20 @@
             <path>
               <item name="startup" type="b2602c69:ProjectViewProjectNode" />
               <item name="startup" type="462c0819:PsiDirectoryNode" />
-              <item name="startup-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="startup" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="startup" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="startup" type="b2602c69:ProjectViewProjectNode" />
               <item name="startup" type="462c0819:PsiDirectoryNode" />
-              <item name="startup-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="startup" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="startup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startup" type="462c0819:PsiDirectoryNode" />
-              <item name="startup-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="startup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startup" type="462c0819:PsiDirectoryNode" />
-              <item name="startup-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="startup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startup" type="462c0819:PsiDirectoryNode" />
-              <item name="startup-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="api-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="startup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startup" type="462c0819:PsiDirectoryNode" />
-              <item name="startup-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="api-client" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -483,28 +459,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="startup" type="58d84e3e:PackageViewProjectNode" />
-              <item name="startup" type="eaaa3913:PackageViewModuleGroupNode" />
-            </path>
-            <path>
-              <item name="startup" type="58d84e3e:PackageViewProjectNode" />
-              <item name="startup" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="startup_main" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547918498475" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548021623562" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/startup-frontend/package.json" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -542,7 +502,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.Start frontend">
+  <component name="RunManager" selected="Application.Start backend">
     <configuration name="Start backend" type="Application" factoryName="Application" singleton="true">
       <option name="MAIN_CLASS_NAME" value="com.minor.startup.StartupApplication" />
       <module name="startup_main" />
@@ -598,12 +558,14 @@
       <workItem from="1547818124068" duration="506000" />
       <workItem from="1547819503265" duration="6885000" />
       <workItem from="1547845766388" duration="4925000" />
-      <workItem from="1547904961693" duration="9365000" />
+      <workItem from="1547904961693" duration="16276000" />
+      <workItem from="1547986072271" duration="48000" />
+      <workItem from="1547986139800" duration="5685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23898000" />
+    <option name="totallyTimeSpent" value="36542000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -618,7 +580,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26439232" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -626,11 +588,10 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39869988" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
@@ -643,6 +604,7 @@
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="bottom" id="TypeScript" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -659,6 +621,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/CallbackController.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>req</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>req.getAuthType()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/startup/src/main/resources/auth0.properties" />
@@ -677,25 +665,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/startup/src/main/resources/templates/hello.html" />
-    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/StartupApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/startup/settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startup/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/startup/src/main/resources/webapp/WEB-INF/jsp/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -711,50 +682,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/MvcConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/MvcConfiguration.java" />
     <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/ErrorController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startup/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="31" column="68" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -782,57 +717,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/CallbackController.java">
+    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/StartupApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+        <state relative-caret-position="425">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/generated/api-client/api/homeController.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+          <folding>
+            <element signature="e#308#390#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/TokenAuthentication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="31" column="64" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1808#1809#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1872#1873#0" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
-            <element signature="e#1942#1943#0" expanded="true" />
-            <element signature="e#1977#1978#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-139">
+          <caret line="25" column="69" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="68">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup-frontend/src/generated/api-client/api/homeController.service.ts">
+    <entry file="file://$PROJECT_DIR$/startup/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612" />
+        <state relative-caret-position="544">
+          <caret line="32" column="87" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/startup/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#914#935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/services/AuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/CallbackController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

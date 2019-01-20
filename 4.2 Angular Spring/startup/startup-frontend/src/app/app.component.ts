@@ -9,8 +9,10 @@ import {HomeControllerService} from '../generated/api-client';
 export class AppComponent {
   title = 'startup-frontend';
 
-  constructor(private test: HomeControllerService) {
-    console.log(test);
+  constructor(private api_client: HomeControllerService) {
+    api_client.getTextUsingGET().subscribe((data: String) => {
+      console.log(data);
+    }, error1 => console.log(error1));
   }
 
 
