@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7c18a50-f141-4489-85cf-2a4a9ebda895" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/startup-frontend/src/app/app.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup-frontend/src/app/auth/auth0-variables.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startup-frontend/src/assets/loading.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup-frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup-frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup-frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup-frontend/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/src/app/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup-frontend/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/src/app/home/home.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/startup/.gradle/" />
     <ignored path="$PROJECT_DIR$/startup/build/" />
@@ -40,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="306">
               <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
@@ -67,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/home/home.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="221">
+              <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -88,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/auth/auth.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            <state relative-caret-position="-99">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -133,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="306">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -186,13 +175,13 @@
         <option value="$PROJECT_DIR$/startup-frontend/src/app/callback/callback/callback.component.ts" />
         <option value="$PROJECT_DIR$/startup-frontend/src/index.html" />
         <option value="$PROJECT_DIR$/startup-frontend/src/app/app.routes.ts" />
-        <option value="$PROJECT_DIR$/startup-frontend/src/app/auth/auth.service.ts" />
         <option value="$PROJECT_DIR$/startup-frontend/src/app/auth/auth.service.spec.ts" />
         <option value="$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.ts" />
-        <option value="$PROJECT_DIR$/startup-frontend/src/app/home/home.component.ts" />
         <option value="$PROJECT_DIR$/startup-frontend/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/startup-frontend/src/app/auth/auth0-variables.ts" />
         <option value="$PROJECT_DIR$/startup-frontend/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/home/home.component.ts" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/auth/auth.service.ts" />
       </list>
     </option>
   </component>
@@ -531,7 +520,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548190894580" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548195457738" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/startup-frontend/package.json" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -630,12 +619,12 @@
       <workItem from="1547904961693" duration="16276000" />
       <workItem from="1547986072271" duration="48000" />
       <workItem from="1547986139800" duration="5685000" />
-      <workItem from="1548185273689" duration="4194000" />
+      <workItem from="1548185273689" duration="6139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40736000" />
+    <option name="totallyTimeSpent" value="42681000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -661,13 +650,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39869988" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -977,16 +966,6 @@
     <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/home/home.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/auth/auth.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/auth/auth0-variables.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1019,16 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/home/home.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1039,22 +1008,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="306">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="306">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
           <folding>
-            <element signature="e#0#56#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/auth/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
