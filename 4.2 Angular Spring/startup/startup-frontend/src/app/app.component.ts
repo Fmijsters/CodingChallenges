@@ -1,19 +1,22 @@
-import {Component} from '@angular/core';
-import {HomeControllerService} from '../generated/api-client';
+import {Component, OnInit} from '@angular/core';
+import {AuthService} from './auth/auth.service';
+import {RouterModule} from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [ AuthService , RouterModule]
 })
-export class AppComponent {
-  title = 'startup-frontend';
+export class AppComponent implements OnInit {
 
-  constructor(private api_client: HomeControllerService) {
-    api_client.getTextUsingGET().subscribe((data: String) => {
-      console.log(data);
-    }, error1 => console.log(error1));
+  constructor(public auth: AuthService) {
+    auth.handleAuthentication();
   }
 
-
+  ngOnInit() {
+    if (localStorage.getItem('isLoggedIn') === 'true') {
+      this.auth.renewTokens();
+    }
+  }
 }

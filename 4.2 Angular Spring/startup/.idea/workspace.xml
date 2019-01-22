@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7c18a50-f141-4489-85cf-2a4a9ebda895" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/startup_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/startup_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/startup_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/startup_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startup-frontend/src/app/app.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startup-frontend/src/app/auth/auth0-variables.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startup-frontend/src/assets/loading.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup-frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startup-frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startup-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/startup/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/StartupApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/StartupApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup-frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/startup-frontend/src/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/startup/.gradle/" />
     <ignored path="$PROJECT_DIR$/startup/build/" />
@@ -36,77 +41,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/CallbackController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/AppConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#914#935#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="87" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/HomeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            <state relative-caret-position="235">
+              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -115,17 +53,90 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup-frontend/src/index.html">
+        <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.routes.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/home/home.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/auth/auth.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/auth/auth0-variables.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup-frontend/src/generated/api-client/api/homeController.service.ts">
+        <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.spec.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+            <state>
               <folding>
-                <element signature="e#308#390#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,6 +150,13 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>RouterL</find>
+      <find>Router</find>
+      <find>callback</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -156,8 +174,6 @@
         <option value="$PROJECT_DIR$/startup/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/startup-frontend/package.json" />
-        <option value="$PROJECT_DIR$/startup-frontend/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/startup-frontend/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/StartupApplication.java" />
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/AppConfig.java" />
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/HomeController.java" />
@@ -165,6 +181,18 @@
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/services/AuthService.java" />
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/CallbackController.java" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/callback/callback/callback.component.html" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/callback/callback/callback.component.ts" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/index.html" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/app.routes.ts" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/auth/auth.service.ts" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/auth/auth.service.spec.ts" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.ts" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/home/home.component.ts" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/auth/auth0-variables.ts" />
+        <option value="$PROJECT_DIR$/startup-frontend/src/app/app.module.ts" />
       </list>
     </option>
   </component>
@@ -303,17 +331,57 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="startup" type="58d84e3e:PackageViewProjectNode" />
-              <item name="startup" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
             <path>
-              <item name="startup" type="58d84e3e:PackageViewProjectNode" />
-              <item name="startup" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="startup_main" type="616d4139:PackageViewModuleNode" />
+              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="startup_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="startup_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="startup_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="startup_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="minor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="startup_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="minor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="startup" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="startup_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="minor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="startup" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -387,73 +455,72 @@
               <item name="startup" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="startup" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="startup" type="b2602c69:ProjectViewProjectNode" />
               <item name="startup" type="462c0819:PsiDirectoryNode" />
-              <item name="startup" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="startup-frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="startup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="startup" type="462c0819:PsiDirectoryNode" />
+              <item name="startup-frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="startup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="startup" type="462c0819:PsiDirectoryNode" />
+              <item name="startup-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="startup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="startup" type="462c0819:PsiDirectoryNode" />
+              <item name="startup-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="startup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="startup" type="462c0819:PsiDirectoryNode" />
+              <item name="startup-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="callback" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="startup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="startup" type="462c0819:PsiDirectoryNode" />
+              <item name="startup-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="startup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="startup" type="462c0819:PsiDirectoryNode" />
+              <item name="startup-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+      <pane id="PackagesPane">
+        <subPane>
           <expand>
             <path>
-              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="startup" type="58d84e3e:PackageViewProjectNode" />
+              <item name="startup" type="eaaa3913:PackageViewModuleGroupNode" />
             </path>
             <path>
-              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="startup_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="startup_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="startup_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="startup_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="minor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="startup_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="minor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="startup" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="startup" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="startup" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="startup_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="minor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="startup" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="startup" type="58d84e3e:PackageViewProjectNode" />
+              <item name="startup" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="startup_main" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
@@ -464,7 +531,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548021623562" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548190894580" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/startup-frontend/package.json" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -477,17 +544,19 @@
     <property name="ts.external.directory.path" value="C:\Users\fmijs\Documents\2019\CodingChallenges\4.2 Angular Spring\startup\startup-frontend\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.minor.startup.security" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\fmijs\Documents\2019\CodingChallenges\4.2 Angular Spring\startup\startup\src\main\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fmijs\Documents\2019\CodingChallenges\4.2 Angular Spring\startup\startup-frontend\src\app\auth" />
+      <recent name="C:\Users\fmijs\Documents\2019\CodingChallenges\4.2 Angular Spring\startup\startup-frontend\src\app\callback" />
+      <recent name="C:\Users\fmijs\Documents\2019\CodingChallenges\4.2 Angular Spring\startup\startup-frontend\src\app" />
       <recent name="C:\Users\fmijs\Documents\2019\CodingChallenges\4.2 Angular Spring\startup\startup\src\main\resources\webapp" />
       <recent name="C:\Users\fmijs\Documents\2019\CodingChallenges\4.2 Angular Spring\startup\startup\src\main\resources" />
-      <recent name="C:\Users\Spare spoed\Documents\Projects\CodingChallenges\4.2 Angular Spring\startup\startup\src\main\resources" />
-      <recent name="C:\Users\Spare spoed\Documents\Projects\CodingChallenges\4.2 Angular Spring\startup\startup\src\main\java\com\minor\startup\controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fmijs\Documents\2019\CodingChallenges\4.2 Angular Spring\startup\startup-frontend\src\assets" />
+      <recent name="C:\Users\fmijs\Documents\2019\CodingChallenges\4.2 Angular Spring\startup\startup\src\main\resources" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.minor.startup.security" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -502,7 +571,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Start backend">
+  <component name="RunManager" selected="npm.Start frontend">
     <configuration name="Start backend" type="Application" factoryName="Application" singleton="true">
       <option name="MAIN_CLASS_NAME" value="com.minor.startup.StartupApplication" />
       <module name="startup_main" />
@@ -561,11 +630,12 @@
       <workItem from="1547904961693" duration="16276000" />
       <workItem from="1547986072271" duration="48000" />
       <workItem from="1547986139800" duration="5685000" />
+      <workItem from="1548185273689" duration="4194000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36542000" />
+    <option name="totallyTimeSpent" value="40736000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -580,7 +650,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26439232" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26705757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -603,7 +673,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.32936078" />
       <window_info anchor="bottom" id="TypeScript" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -649,8 +719,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/startup/src/main/resources/auth0.properties" />
-    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/MvcConfig.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.1.4.RELEASE/bc7c96711c0d7aa9a4c93a90cb8622814ad18fab/spring-webmvc-5.1.4.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.4.RELEASE/1c97085f1052ad3206bafd364eba572d9f7565c2/spring-web-5.1.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java" />
     <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LogoutController.java">
@@ -681,9 +749,6 @@
           <caret line="219" column="16" selection-start-line="219" selection-start-column="16" selection-end-line="219" selection-end-column="16" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/MvcConfiguration.java" />
     <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/ErrorController.java">
@@ -737,39 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startup-frontend/src/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startup-frontend/src/generated/api-client/api/homeController.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-          <folding>
-            <element signature="e#308#390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/TokenAuthentication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-139">
@@ -777,10 +809,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/HomeController.java">
+    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/services/AuthService.java" />
+    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/CallbackController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        <state relative-caret-position="184">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -794,50 +854,207 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/security/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#914#935#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="68">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/services/AuthService.java">
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/generated/api-client/api/homeController.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="986">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#308#390#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startup/src/main/java/com/minor/startup/controllers/CallbackController.java">
+    <entry file="file://$PROJECT_DIR$/startup-frontend/node_modules/@angular/router/src/directives/router_outlet.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        <state relative-caret-position="176">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/callback/callback/callback.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/callback/callback/callback.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/node_modules/@angular/router/src/directives/router_link.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="94" column="30" lean-forward="true" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/callback/callback/callback.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/node_modules/@angular/router/src/router.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="173" column="21" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/assets/loading.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/home/home.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/auth/auth.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#41#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/home/home.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/auth/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/auth/auth0-variables.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/callback/callback.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup-frontend/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
