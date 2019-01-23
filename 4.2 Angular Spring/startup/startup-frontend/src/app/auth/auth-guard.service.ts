@@ -9,7 +9,7 @@ export class AuthGuardService implements CanActivate {
   }
 
   canActivate(): boolean {
-    if (!this.auth.isAuthenticated()) {
+    if (!localStorage.getItem('isLoggedIn')) {
       this.router.navigate(['']);
       return false;
     }

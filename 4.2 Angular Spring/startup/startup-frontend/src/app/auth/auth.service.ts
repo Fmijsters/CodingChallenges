@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {AUTH_CONFIG} from './auth0-variables';
 import {Router} from '@angular/router';
 import * as auth0 from 'auth0-js';
-import {HomeControllerService} from "../../generated/api-client";
+import {HomeControllerService} from '../../generated/api-client';
 
 @Injectable()
 export class AuthService {
@@ -36,6 +36,7 @@ export class AuthService {
   get idToken(): string {
     return this._idToken;
   }
+
 
   public login(): void {
     this.auth0.authorize();
