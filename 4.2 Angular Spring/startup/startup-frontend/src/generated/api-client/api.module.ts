@@ -3,22 +3,16 @@ import { Configuration } from './configuration';
 import { HttpClient } from '@angular/common/http';
 
 
-import { CallbackControllerService } from './api/callbackController.service';
-import { ErrorControllerService } from './api/errorController.service';
+import { BasicErrorControllerService } from './api/basicErrorController.service';
 import { HomeControllerService } from './api/homeController.service';
-import { LoginControllerService } from './api/loginController.service';
-import { LogoutControllerService } from './api/logoutController.service';
 
 @NgModule({
   imports:      [],
   declarations: [],
   exports:      [],
   providers: [
-    CallbackControllerService,
-    ErrorControllerService,
-    HomeControllerService,
-    LoginControllerService,
-    LogoutControllerService ]
+    BasicErrorControllerService,
+    HomeControllerService ]
 })
 export class ApiModule {
     public static forRoot(configurationFactory: () => Configuration): ModuleWithProviders {

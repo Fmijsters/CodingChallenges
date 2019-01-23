@@ -1,11 +1,5 @@
-export * from './callbackController.service';
-import { CallbackControllerService } from './callbackController.service';
-export * from './errorController.service';
-import { ErrorControllerService } from './errorController.service';
+export * from './basicErrorController.service';
+import { BasicErrorControllerService } from './basicErrorController.service';
 export * from './homeController.service';
 import { HomeControllerService } from './homeController.service';
-export * from './loginController.service';
-import { LoginControllerService } from './loginController.service';
-export * from './logoutController.service';
-import { LogoutControllerService } from './logoutController.service';
-export const APIS = [CallbackControllerService, ErrorControllerService, HomeControllerService, LoginControllerService, LogoutControllerService];
+export const APIS = [BasicErrorControllerService, HomeControllerService];
