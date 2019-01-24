@@ -61,19 +61,13 @@ export class HomeControllerService {
     /**
      * getText
      * 
-     * @param name 
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public getTextUsingGET(name?: string, observe?: 'body', reportProgress?: boolean): Observable<any>;
-    public getTextUsingGET(name?: string, observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<any>>;
-    public getTextUsingGET(name?: string, observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<any>>;
-    public getTextUsingGET(name?: string, observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
-
-        let queryParameters = new HttpParams({encoder: new CustomHttpUrlEncodingCodec()});
-        if (name !== undefined && name !== null) {
-            queryParameters = queryParameters.set('name', <any>name);
-        }
+    public getTextUsingGET(observe?: 'body', reportProgress?: boolean): Observable<any>;
+    public getTextUsingGET(observe?: 'response', reportProgress?: boolean): Observable<HttpResponse<any>>;
+    public getTextUsingGET(observe?: 'events', reportProgress?: boolean): Observable<HttpEvent<any>>;
+    public getTextUsingGET(observe: any = 'body', reportProgress: boolean = false ): Observable<any> {
 
         let headers = this.defaultHeaders;
 
@@ -92,7 +86,6 @@ export class HomeControllerService {
 
         return this.httpClient.get<any>(`${this.configuration.basePath}/gettext`,
             {
-                params: queryParameters,
                 withCredentials: this.configuration.withCredentials,
                 headers: headers,
                 observe: observe,

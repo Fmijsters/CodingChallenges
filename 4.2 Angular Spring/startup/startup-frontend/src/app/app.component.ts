@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Optional, SkipSelf} from '@angular/core';
 import {AuthService} from './auth/auth.service';
 import {RouterModule} from '@angular/router';
 

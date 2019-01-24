@@ -26,7 +26,12 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-rest'
     implementation 'org.springframework.boot:spring-boot-starter-integration'
     implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation 'com.auth0:mvc-auth-commons:1.+'
+
+    implementation 'com.auth0:auth0-spring-security-api:1.2.1'
+    implementation 'com.nimbusds:nimbus-jose-jwt:4.11'
     implementation "org.springframework.boot:spring-boot-starter-security"
+    implementation 'javax.inject:javax.inject:1'
     implementation group: 'org.eclipse.jdt.core.compiler', name: 'ecj', version: '4.4.2'
     implementation group: 'io.springfox', name:'springfox-swagger2',version:'2.9.2'
     implementation group: 'io.springfox', name:'springfox-swagger-ui',version:'2.9.2'
