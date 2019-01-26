@@ -21,7 +21,8 @@ public class AppConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable();
         http
                 .authorizeRequests()
-                .antMatchers("/v2/api-docs", "/**").permitAll()
+                .antMatchers("/v2/api-docs").permitAll()
+                .antMatchers("/**").authenticated()
                 .and()
                 .logout().permitAll()
                 .and().addFilterBefore(authenticationFilter, BasicAuthenticationFilter.class);

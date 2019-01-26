@@ -11,15 +11,9 @@ export class HomeComponent implements OnInit {
 
   constructor(@Optional() @SkipSelf() public auth: AuthService, apiclient: HomeControllerService) {
     if (this.auth.isAuthenticated()) {
-      apiclient.configuration.accessToken = auth.idToken;
-      apiclient.configuration.withCredentials = false;
-      apiclient.defaultHeaders.set('Authorization', auth.idToken);
-      console.log(apiclient.defaultHeaders.keys());
       apiclient.getTextUsingGET().subscribe(value => console.log(value));
-      console.log(apiclient.defaultHeaders);
-      console.log(apiclient.configuration);
     }
-  }
+  }2
 
   ngOnInit() {
   }

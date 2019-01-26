@@ -15,7 +15,8 @@ public class AuthenticationFilter extends GenericFilterBean {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) {
-        if (((HttpServletRequest) request).getHeader("authorization") != null) {
+        String jwtToken = ((HttpServletRequest) request).getHeader("authorization");
+        if (jwtToken != null) {
             TokenAuthentication tokenAuth = new TokenAuthentication(JWT.decode(((HttpServletRequest) request).getHeader("authorization")));
             SecurityContextHolder.getContext().setAuthentication(tokenAuth);
         }

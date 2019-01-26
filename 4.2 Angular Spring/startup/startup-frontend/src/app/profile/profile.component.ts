@@ -17,10 +17,8 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     if (this.auth.isAuthenticated()) {
       if (this.auth.userProfile) {
-        console.log('1');
         this.profile = this.auth.userProfile;
       } else {
-        console.log('2');
         this.auth.getProfile((err, profile) => {
           this.profile = profile;
         });
