@@ -1,6 +1,15 @@
-<h4 *ngIf="auth.isAuthenticated()">
-  You are logged in!
-</h4>
+<div class="container-login100">
+
+  <div class="wrap-login100" *ngIf="auth.isAuthenticated()">
+    <h4 *ngIf="auth.isAuthenticated()" class="login100-form-title">
+      Welcome!
+    </h4>
+    <div class="wrap-input100 validate-input" data-validate = "Enter username">
+      <input class="input100" type="text" name="search" placeholder="Zoeken">
+      <span class="focus-input100" data-placeholder="&#xf207;"></span>
+    </div>
+  </div>
+</div>
 <h4 *ngIf="!auth.isAuthenticated()">
   You are not logged in! Please <a (click)="auth.login()">Log In</a> to continue.
 </h4>

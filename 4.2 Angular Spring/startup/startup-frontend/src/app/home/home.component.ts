@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
     if (this.auth.isAuthenticated()) {
       apiclient.getTextUsingGET().subscribe(value => console.log(value));
     }
-  }2
+  }
 
   ngOnInit() {
   }
